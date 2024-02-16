@@ -1,6 +1,6 @@
 function invertirNumeroRecursivo(numero) {
     if (numero < 10) {
-        return numero; // Caso base: un solo dígito
+        return numero; 
     } else {
         const ultimoDigito = numero % 10;
         const restoNumero = Math.floor(numero / 10);
