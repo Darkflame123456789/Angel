@@ -1,16 +1,16 @@
-let numero = prompt("ingrese un numero"); 
-
 function fizzBuzz(numero) {
-    
-    if (numero % 3 === 0 && numero % 5 === 0) {
-        return "FizzBuzz";
-    } else if (numero % 3 === 0) {
-        return "Fizz";
-    } else if (numero % 5 === 0) {
-        return "Buzz";
-    } else {
-        return numero;
+let Num = "";
+
+if (numero % 3 === 0) {
+        Num += "fizz";
     }
+
+    if (numero % 5 === 0) {
+        Num += "buzz";
+    }
+
+    return Num || numero.toString();
 }
- 
+
+let numero = Number(prompt("Ingrese un número"));
 console.log(fizzBuzz(numero));
